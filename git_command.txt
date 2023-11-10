@@ -1,0 +1,7 @@
+git status
+git add .
+git add <filename>
+git commit -m "some message here"
+git push origin main
+
+

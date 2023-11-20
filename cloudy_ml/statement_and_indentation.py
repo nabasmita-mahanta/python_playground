@@ -15,4 +15,14 @@ if 10>5:
         print('world')
 print('python')
 
+password = "qwert"
 
+for i in range(1, 5):
+    user_input = input('Enter Password: ')
+    if user_input == password:
+        print('Welcome to CloudyML Course!!')
+        break
+    else:
+        print('Wrong Password!!')
+        if i == 3:
+            print('One Last Trial left!!!')

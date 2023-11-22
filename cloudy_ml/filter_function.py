@@ -1,7 +1,7 @@
 # The filter function is an inbuilt function in python
 # that takes in two arguments - a boolean_function & an iterator
 
-# syntax - map(boolean_function,iterator)
+# syntax - filter(boolean_function,iterator)
 
 # the filter function returns a filter of the results
 # that returns true for

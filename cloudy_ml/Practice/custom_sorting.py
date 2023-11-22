@@ -41,3 +41,13 @@ for element in student_marks[1:]:
 
 average_marks_in_sql = total_sql_marks/ total_student
 print(average_marks_in_sql)
+
+dict_sample = {
+    'a':1,
+    'b':2,
+    'c':3,
+    'a':23
+}
+print(dict_sample.items())
+sorted_dict = sorted(dict_sample.items(), key= lambda x:x[1] )
+print(sorted_dict)

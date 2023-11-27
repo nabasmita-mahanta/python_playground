@@ -5,3 +5,11 @@ git commit -m "some message here"
 git push origin main
 
 
+git fetch
+git pull origin main
+
+
+git branch problem-solving
+git checkout problem-solving
+
+

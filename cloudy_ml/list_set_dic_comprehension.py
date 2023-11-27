@@ -25,4 +25,33 @@ print(odd_even_list)
 odd_even_list1 = [str(numbers) + ' = Even' if numbers%2 == 0 else str(numbers) + ' = Odd' for numbers in nums]
 print(odd_even_list1)
 
+#Converet all element of below tuple in upper case and
+# change datatype into list
 
+animals = ('bird', 'snake', 'dog', 'turtle', 'cat', 'hamster')
+new_list = []
+
+for animal in animals:
+    print(animal.upper())
+    new_list.append(animal.upper())
+print(new_list)
+
+new_list2 = [animal.upper() for animal in animals]
+print(new_list2)
+
+
+
+animals = ('bird', 'snake', 'dog', 'turtle', 'cat', 'hamster')
+
+my_dictionary = {}
+
+for animal in animals:
+   key = animal
+   value = len(animal)
+   my_dictionary.update({key:value})
+
+print(my_dictionary)
+
+
+my_dictionary1 = {animal : len(animal) for animal in animals}
+print(my_dictionary1)

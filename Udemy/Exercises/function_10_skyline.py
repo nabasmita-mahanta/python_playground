@@ -14,6 +14,7 @@ Added note: this exercise requires that the function return a string.
  Print statements will not work here.
 """
 
+
 def myfunc(string):
     final_string = ""
     for index, letter in enumerate(string):
@@ -27,3 +28,5 @@ def myfunc(string):
 
 result = myfunc("Anthropomorphism")
 print(result)
+
+

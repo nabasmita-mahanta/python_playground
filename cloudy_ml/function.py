@@ -24,3 +24,18 @@ def my_var_sum(*args):
         return sum
 my_var_sum(1,2,4,5,6)
 
+# Write a function 'digits' that takes a number
+# and prints digits of that number
+# eg digits(6475)
+def digits(x):
+    for num in x:
+        print(int(x))
+
+
+# OUTPUT
+# 6
+# 4
+# 7
+# 5
+
+

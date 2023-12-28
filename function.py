@@ -37,3 +37,8 @@ def power_of_number(number,power):
     return (number**power)
 result = power_of_number(2,3)
 print(result)
+
+def digits(number):
+    for num in number:
+        print(num)
+digits(7890)

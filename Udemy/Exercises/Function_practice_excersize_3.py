@@ -211,28 +211,42 @@ extending to the next 9 (every 6 will be followed by at least one 9).
 Return 0 for no numbers.
 summer_69([1, 3, 5]) --> 9
 summer_69([4, 5, 6, 7, 8, 9]) --> 9
-summer_69([2, 1, 6, 9, 11]) --> 14
+summer_69([2, 1, 6,9, 11]) --> 14
+summer_69([7,5,8,3,235,6,21,57,6,83,9,11,0,-9,9,12])
 '''
 
 
-def summer_69(arr):
-    total = 0
-    add = True
-
+def summer_692(arr):
+    flag = False
+    sum = 0
     for num in arr:
-        while add:
-            if num != 6:
-                total = total + num
-                break
-            else:
-                add = False
-        while not add:
-            if num != 9:
-                break
-            else:
-                add = True
-                break
-    return total
+        if num == 6:
+            flag = True
+        if flag == False:
+            sum = sum + num
+        if num == 9:
+            flag = False
+    return sum
 
 
-print(summer_69([2,1,6,9,11]))
+# def summer_69(arr):
+#     total = 0
+#     add = True
+#
+#     for num in arr:
+#         while add:
+#             if num != 6:
+#                 total = total + num
+#                 break
+#             else:
+#                 add = False
+#         while not add:
+#             if num != 9:
+#                 break
+#             else:
+#                 add = True
+#                 break
+#     return total
+
+
+print(summer_692([2, 1, 6, 9, 11]))

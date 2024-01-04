@@ -33,7 +33,6 @@ whisper = lambda t: t.lower()
 
 print(whisper('Please Keep QUIET'))
 
-
 # def greet(fn):
 #     # storing the function in a variable
 #     greeting = fn('Hey there, PYTHON is awesome')
@@ -42,6 +41,14 @@ print(whisper('Please Keep QUIET'))
 
 greet = lambda fn: fn('Hey there, PYTHON is awesome')
 
-
 print(greet(shout))
 print(greet(lambda t: t.lower()))
+
+# def sqr(num):
+#     return num**2
+# print(sqr(3))
+
+sqr = lambda num: num ** 2
+print(sqr(5))
+
+

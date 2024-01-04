@@ -18,6 +18,18 @@ def is_even(x):
         return False
 
 
-result = filter(is_even,nums)
+result = filter(is_even, nums)
 
 print(list(result))
+
+
+def check_odd(num):
+    return num % 2 != 0
+
+
+mynums = [1, 2, 3, 4, 5]
+
+result = filter(check_odd, mynums)
+print(list(result))
+
+

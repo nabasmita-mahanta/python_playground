@@ -250,3 +250,49 @@ def summer_692(arr):
 
 
 print(summer_692([2, 1, 6, 9, 11]))
+
+'''SPY GAME: Write a function that takes in a list of 
+integers and returns True if it contains 007 in order
+ spy_game([1,2,4,0,0,7,5]) --> True
+ spy_game([1,0,2,4,0,5,7]) --> True
+ spy_game([1,7,2,0,4,5,0]) --> False
+'''
+
+
+def spy_game(nums):
+    code = [0, 0, 7, 'x']
+    for i in nums:
+        if i == code[0]:
+            code.pop(0)
+    return len(code) == 1
+
+
+print(spy_game([1, 7, 2, 0, 4, 5, 0]))
+
+'''COUNT PRIMES: Write a function that returns the number of 
+prime numbers that exist up to and including a given number
+count_primes(100) --> 25
+By convention, 0 and 1 are not prime.
+'''
+
+
+def count_primes(number):
+    prime = []
+    for num in range(0, number + 1):
+        if num == 0:
+            pass
+        elif num == 1:
+            pass
+        elif num > 1:
+            for i in range(2, num):
+                if num % i == 0:
+                    break
+            else:
+                prime.append(num)
+    print("The prime numbers are:", (prime))
+    print("The count of prime numbers are:", (len(prime)))
+
+
+count_primes(10)
+
+

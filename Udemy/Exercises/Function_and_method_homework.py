@@ -54,3 +54,90 @@ def up_low(s):
 
 s = 'Hello Mr. Rogers, how are you this fine Tuesday?'
 up_low(s)
+
+'''Write a Python function that takes a list and returns 
+a new list with unique elements of the first list.
+
+Sample List : [1,1,1,1,2,2,3,3,3,3,4,5]
+Unique List : [1, 2, 3, 4, 5]'''
+
+
+def unique_list(lst):
+    return list(set(lst))
+
+
+print(unique_list([1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 5]))
+
+
+# another way
+
+def uni_list(xyz):
+    seen_numbers = []
+    for num in xyz:
+        if num not in seen_numbers:
+            seen_numbers.append(num)
+    return seen_numbers
+
+
+print(uni_list([1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 5]))
+
+'''Write a Python function to multiply all the numbers in a list.
+
+Sample List : [1, 2, 3, -4]
+Expected Output : -24'''
+
+
+def multiply(numbers):
+    total = 1
+    for num in numbers:
+        total = total * num
+    return total
+
+
+print(multiply([1, 2, 3, -4]))
+
+'''Write a Python function that checks whether a word or phrase 
+is palindrome or not.'''
+
+
+def palindrome(s):
+    if s[:] == s[::-1]:
+        return True
+    else:
+        return False
+
+
+print(palindrome('helleh'))
+
+'''Hard:
+Write a Python function to check whether a string is pangram or not. 
+(Assume the string passed in does not have any punctuation)
+
+Note : Pangrams are words or sentences containing every letter of 
+the alphabet at least once.
+For example : "The quick brown fox jumps over the lazy dog"
+Hint: You may want to use .replace() method to get rid of spaces.
+
+Hint: Look at the string module
+
+Hint: In case you want to use set comparisons'''
+import string
+
+
+def ispangram(str1, alphabet=string.ascii_lowercase):
+    # create a set of alphabet
+    alphaset = set(alphabet)
+    # Remove any spaces from the input string
+    str1 = str1.replace(' ', '')
+    # Covert into all lowercase.
+    str1 = str1.lower()
+    # Grab all unique letters from the string set()
+    str1 = set(str1)
+    # alphabet set == string set input
+    return str1 == alphaset
+
+
+print(ispangram("The quick brown fox jumps over the lazy dog"))
+print(string.ascii_lowercase)
+
+

@@ -1,10 +1,12 @@
+# INTRODUCTION TO WARMUP PROJECT EXERCISE
+
 print([1, 2, 3])
 
 print([1, 2, 3])
 print([4, 5, 6])
 print([7, 8, 9])
 
-
+# DISPLAYING INFORMATION
 def display(row1, row2, row3):
     print(row1)
     print(row2)
@@ -18,13 +20,16 @@ display(row1, row2, row3)
 row2[1] = 'X'
 display(row1, row2, row3)
 
+
+# ACCEPTING USER INPUT
+
 result = input('Please enter a value: ')
 print(result)
 
 position_index = int(input("Choose an index position: "))
 print(type(position_index))
 
-
+# VALIDATING USER INPUT
 def user_choice():
     # Variabes
 

@@ -8,7 +8,6 @@
 
 # method overloading (NOT PRESENT IN PYTHON) - when in a same class we have same method names but with differnt parameters
 
-
 class Car:
     def __init__(self, brand, model):
         self.brand = brand
@@ -39,6 +38,7 @@ class Plane:
 car1 = Car("Ford", "Mustang")
 boat1 = Boat("Ibiza", "Touring 20")
 plane1 = Plane("Boeing", "747")
+
 
 # car1.move()
 # boat1.move()

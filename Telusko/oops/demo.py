@@ -8,7 +8,8 @@ obj1.talk()
 obj1.breathe()
 print(obj1)
 
-# lets create another human object
+
+# let's create another human object
 obj2 = Human(age=27, gender="M", name="Abhinov")
 print(obj2.no_of_legs)
 obj2.talk()
